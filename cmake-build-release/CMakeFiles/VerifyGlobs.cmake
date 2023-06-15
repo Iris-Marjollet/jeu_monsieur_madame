@@ -14,7 +14,7 @@ set(OLD_GLOB
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/grater_cheese.png"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/pot.png"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_cheese.png"
-  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_peperoni.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_pepperoni.png"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_tomatoe.png"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
