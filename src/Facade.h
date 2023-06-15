@@ -35,4 +35,5 @@ public:
     void draw_init();
     void startCooking(Preparation preparation);
     int addIngredient(Pizza pizza);
+    sf::Texture loadTextureFromFile(const std::string& filePath);
 };
