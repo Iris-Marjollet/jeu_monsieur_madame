@@ -53,7 +53,7 @@ void Facade::init(){
 
 void Facade::draw_init() {
     //movement
-    float xVelocity = 1;
+    float xVelocity = 3;
     // Get the screen resolution
     sf::VideoMode desktopMode = sf::VideoMode::getDesktopMode();
     unsigned int screenWidth = desktopMode.width;
@@ -214,14 +214,31 @@ void Facade::draw_init() {
             }
         }
         //physics
-        circlePosition.x += xVelocity;
-        saucePosition.x += xVelocity;
-        pizzas[0].setDough(screenWidth, circlePosition, xVelocity, saucePosition,cooked_cheese, ingredients.at("tomatoe").added, ingredients.at("cheese").added, ingredients.at("pepperoni").added) ;
+        if(circlePosition.x == screenWidth*0.65) {
+            //we are at the end of the line
+            //circlePosition = sf::Vector2f(0,5*screenHeight/10);
+            //saucePosition = sf::Vector2f(200*screenWidth/2500-170*screenWidth/2500,5*screenHeight/10+200*screenWidth/2500-170*screenWidth/2500);
+            pizzas[0].setDough(screenWidth, circlePosition, xVelocity,saucePosition,cooked_cheese,false,false,false );
+            pizzas[0].invisible();
+        }
+        else {
+            circlePosition.x += xVelocity;
+            saucePosition.x += xVelocity;
+            pizzas[0].setDough(screenWidth, circlePosition, xVelocity, saucePosition,cooked_cheese, ingredients.at("tomatoe").added, ingredients.at("cheese").added, ingredients.at("pepperoni").added) ;
+        }
 
+        sf::RectangleShape rect;
+        rect.setSize(sf::Vector2f(20,20));
+        rect.setFillColor(sf::Color::White);
+        rect.setPosition(screenWidth*0.8,screenHeight*0.6);
 
         //render
         window.clear();
+
+
         window.draw(sprite_background);
+        window.draw(rect);
+
         window.draw(score_board);
         scoreText.setString("Your Score: " + std::to_string(score));
         window.draw(scoreText);

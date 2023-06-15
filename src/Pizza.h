@@ -27,6 +27,7 @@ public:
     sf::CircleShape getCheese();
     vector<sf::CircleShape> getPepperoni();
     void addTomato();
+    void invisible();
 
     static int id_count;
 };

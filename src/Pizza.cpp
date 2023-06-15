@@ -162,3 +162,8 @@ int Pizza::addIngredient(Ingredient ingredient) {
     return res;
 }
 
+void Pizza::invisible() {
+    dough.setFillColor(sf::Color::Transparent);
+    dough.setOutlineColor(sf::Color::Transparent);
+}
+
