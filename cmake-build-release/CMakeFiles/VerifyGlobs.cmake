@@ -5,7 +5,17 @@ cmake_policy(SET CMP0009 NEW)
 # RESOURCES at mainLauncher/CMakeLists.txt:7 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/*.*")
 set(OLD_GLOB
-  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/visage.xml"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/background.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/bois1.jpg"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/cooked-cheese.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/cutting_board.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/font.ttf"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/grater.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/grater_cheese.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/pot.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_cheese.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_peperoni.png"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_tomatoe.png"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -20,6 +30,7 @@ set(OLD_GLOB
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Ingredient.cpp"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Kitchen.cpp"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Pizza.cpp"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/PizzaPool.cpp"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Preparation.cpp"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/SFML_output.cpp"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Storage.cpp"
@@ -39,6 +50,7 @@ set(OLD_GLOB
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Ingredient.h"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Kitchen.h"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Pizza.h"
+  "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/PizzaPool.h"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Preparation.h"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/SFML_output.h"
   "/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Storage.h"

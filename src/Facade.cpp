@@ -98,7 +98,7 @@ void Facade::draw_init() {
     score_board.setSize(sf::Vector2f (400,100));
     score_board.setPosition(20,20);
     score_board.setFillColor(sf::Color::Black);
-    score_board.getOutlineColor(sf::Color::White);
+    score_board.setOutlineColor(sf::Color::White);
     score_board.setOutlineThickness(3);
 
     scoreText.setFont(font);

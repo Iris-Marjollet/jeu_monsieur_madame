@@ -31,19 +31,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 346,
+				"line" : 347,
 				"parent" : 1
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 368,
+				"line" : 371,
 				"parent" : 1
 			},
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 368,
+				"line" : 371,
 				"parent" : 1
 			}
 		]
@@ -52,7 +52,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"component" : "Unspecified",
+			"component" : "gmock",
 			"destination" : "include",
 			"paths" : 
 			[
@@ -65,7 +65,7 @@
 		},
 		{
 			"backtrace" : 3,
-			"component" : "Unspecified",
+			"component" : "gmock",
 			"destination" : "lib",
 			"paths" : 
 			[
@@ -77,7 +77,7 @@
 		},
 		{
 			"backtrace" : 3,
-			"component" : "Unspecified",
+			"component" : "gmock",
 			"destination" : "lib",
 			"paths" : 
 			[
@@ -89,7 +89,7 @@
 		},
 		{
 			"backtrace" : 4,
-			"component" : "Unspecified",
+			"component" : "gmock",
 			"destination" : "lib/pkgconfig",
 			"paths" : 
 			[
@@ -99,7 +99,7 @@
 		},
 		{
 			"backtrace" : 5,
-			"component" : "Unspecified",
+			"component" : "gmock",
 			"destination" : "lib/pkgconfig",
 			"paths" : 
 			[

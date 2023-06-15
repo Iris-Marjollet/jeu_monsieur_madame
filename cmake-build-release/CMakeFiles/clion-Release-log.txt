@@ -3,13 +3,15 @@
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-download
-[1/7] Performing update step for 'googletest'
-[2/7] No patch step for 'googletest'
-[3/7] No configure step for 'googletest'
-[4/7] No build step for 'googletest'
-[5/7] No install step for 'googletest'
-[6/7] No test step for 'googletest'
-[7/7] Completed 'googletest'
+[1/8] Performing download step (git clone) for 'googletest'
+-- Avoiding repeated git clone, stamp file is up to date: '/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-download/googletest-prefix/src/googletest-stamp/googletest-gitclone-lastrun.txt'
+[2/8] Performing update step for 'googletest'
+[3/8] No patch step for 'googletest'
+[4/8] No configure step for 'googletest'
+[5/8] No build step for 'googletest'
+[6/8] No install step for 'googletest'
+[7/8] No test step for 'googletest'
+[8/8] Completed 'googletest'
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release

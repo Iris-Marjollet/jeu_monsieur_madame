@@ -364,7 +364,7 @@ build mainLauncher/CMakeFiles/copy-resources | ${cmake_ninja_workdir}mainLaunche
 # Custom command for mainLauncher/resources
 
 build mainLauncher/resources | ${cmake_ninja_workdir}mainLauncher/resources: CUSTOM_COMMAND /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources
-  COMMAND = cd /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher/resources && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E copy_if_different /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/visage.xml /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher/resources
+  COMMAND = cd /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E make_directory /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher/resources && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E copy_if_different /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/background.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/bois1.jpg /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/cooked-cheese.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/cutting_board.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/font.ttf /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/grater.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/grater_cheese.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/pot.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_cheese.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_peperoni.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/resources/storage_tomatoe.png /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/mainLauncher/resources
   DESC = Generating resources
   restat = 1
 
@@ -417,6 +417,13 @@ build src/CMakeFiles/src.dir/Pizza.cpp.o: CXX_COMPILER__src_Release /Users/sarah
   OBJECT_DIR = src/CMakeFiles/src.dir
   OBJECT_FILE_DIR = src/CMakeFiles/src.dir
 
+build src/CMakeFiles/src.dir/PizzaPool.cpp.o: CXX_COMPILER__src_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/PizzaPool.cpp || cmake_object_order_depends_target_src
+  DEP_FILE = src/CMakeFiles/src.dir/PizzaPool.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/. -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/_deps/pugixml-src/src -isystem /opt/homebrew/include
+  OBJECT_DIR = src/CMakeFiles/src.dir
+  OBJECT_FILE_DIR = src/CMakeFiles/src.dir
+
 build src/CMakeFiles/src.dir/Preparation.cpp.o: CXX_COMPILER__src_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/Preparation.cpp || cmake_object_order_depends_target_src
   DEP_FILE = src/CMakeFiles/src.dir/Preparation.cpp.o.d
   FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
@@ -460,7 +467,7 @@ build src/CMakeFiles/src.dir/myMain.cpp.o: CXX_COMPILER__src_Release /Users/sara
 #############################################
 # Link the static library src/libsrc.a
 
-build src/libsrc.a: CXX_STATIC_LIBRARY_LINKER__src_Release src/CMakeFiles/src.dir/Drawing.cpp.o src/CMakeFiles/src.dir/Facade.cpp.o src/CMakeFiles/src.dir/Ingredient.cpp.o src/CMakeFiles/src.dir/Kitchen.cpp.o src/CMakeFiles/src.dir/Pizza.cpp.o src/CMakeFiles/src.dir/Preparation.cpp.o src/CMakeFiles/src.dir/SFML_output.cpp.o src/CMakeFiles/src.dir/Storage.cpp.o src/CMakeFiles/src.dir/colors.cpp.o src/CMakeFiles/src.dir/myMain.cpp.o || _deps/pugixml-build/libpugixml.a /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
+build src/libsrc.a: CXX_STATIC_LIBRARY_LINKER__src_Release src/CMakeFiles/src.dir/Drawing.cpp.o src/CMakeFiles/src.dir/Facade.cpp.o src/CMakeFiles/src.dir/Ingredient.cpp.o src/CMakeFiles/src.dir/Kitchen.cpp.o src/CMakeFiles/src.dir/Pizza.cpp.o src/CMakeFiles/src.dir/PizzaPool.cpp.o src/CMakeFiles/src.dir/Preparation.cpp.o src/CMakeFiles/src.dir/SFML_output.cpp.o src/CMakeFiles/src.dir/Storage.cpp.o src/CMakeFiles/src.dir/colors.cpp.o src/CMakeFiles/src.dir/myMain.cpp.o || _deps/pugixml-build/libpugixml.a /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   LANGUAGE_COMPILE_FLAGS = -O3 -DNDEBUG
   OBJECT_DIR = src/CMakeFiles/src.dir
@@ -560,8 +567,29 @@ build src/install/strip: phony src/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_unitTests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main cmake_object_order_depends_target_pugixml cmake_object_order_depends_target_src
 
-build unitTests/CMakeFiles/unitTests.dir/unitTests.cpp.o: CXX_COMPILER__unitTests_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/unitTests/unitTests.cpp || cmake_object_order_depends_target_unitTests
-  DEP_FILE = unitTests/CMakeFiles/unitTests.dir/unitTests.cpp.o.d
+build unitTests/CMakeFiles/unitTests.dir/testIngredient.cpp.o: CXX_COMPILER__unitTests_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/unitTests/testIngredient.cpp || cmake_object_order_depends_target_unitTests
+  DEP_FILE = unitTests/CMakeFiles/unitTests.dir/testIngredient.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/. -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/_deps/pugixml-src/src -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest/include -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest -isystem /opt/homebrew/include
+  OBJECT_DIR = unitTests/CMakeFiles/unitTests.dir
+  OBJECT_FILE_DIR = unitTests/CMakeFiles/unitTests.dir
+
+build unitTests/CMakeFiles/unitTests.dir/testKitchen.cpp.o: CXX_COMPILER__unitTests_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/unitTests/testKitchen.cpp || cmake_object_order_depends_target_unitTests
+  DEP_FILE = unitTests/CMakeFiles/unitTests.dir/testKitchen.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/. -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/_deps/pugixml-src/src -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest/include -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest -isystem /opt/homebrew/include
+  OBJECT_DIR = unitTests/CMakeFiles/unitTests.dir
+  OBJECT_FILE_DIR = unitTests/CMakeFiles/unitTests.dir
+
+build unitTests/CMakeFiles/unitTests.dir/testStorage.cpp.o: CXX_COMPILER__unitTests_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/unitTests/testStorage.cpp || cmake_object_order_depends_target_unitTests
+  DEP_FILE = unitTests/CMakeFiles/unitTests.dir/testStorage.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
+  INCLUDES = -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/. -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/_deps/pugixml-src/src -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest/include -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest -isystem /opt/homebrew/include
+  OBJECT_DIR = unitTests/CMakeFiles/unitTests.dir
+  OBJECT_FILE_DIR = unitTests/CMakeFiles/unitTests.dir
+
+build unitTests/CMakeFiles/unitTests.dir/testPreparation.cpp.o: CXX_COMPILER__unitTests_Release /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/unitTests/testPreparation.cpp || cmake_object_order_depends_target_unitTests
+  DEP_FILE = unitTests/CMakeFiles/unitTests.dir/testPreparation.cpp.o.d
   FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++20
   INCLUDES = -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/src/. -I/Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/_deps/pugixml-src/src -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest/include -isystem /Users/sarahzakon/Desktop/TSP/2A/C++/project/jeu_monsieur_madame/cmake-build-release/unitTests/googletest-src/googletest -isystem /opt/homebrew/include
   OBJECT_DIR = unitTests/CMakeFiles/unitTests.dir
@@ -575,7 +603,7 @@ build unitTests/CMakeFiles/unitTests.dir/unitTests.cpp.o: CXX_COMPILER__unitTest
 #############################################
 # Link the executable unitTests/unitTests
 
-build unitTests/unitTests: CXX_EXECUTABLE_LINKER__unitTests_Release unitTests/CMakeFiles/unitTests.dir/unitTests.cpp.o | lib/libgtest_main.a src/libsrc.a _deps/pugixml-build/libpugixml.a /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-audio.2.5.1.dylib /opt/homebrew/lib/libsfml-network.2.5.1.dylib lib/libgtest.a /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib || _deps/pugixml-build/libpugixml.a lib/libgtest.a lib/libgtest_main.a src/libsrc.a
+build unitTests/unitTests: CXX_EXECUTABLE_LINKER__unitTests_Release unitTests/CMakeFiles/unitTests.dir/testIngredient.cpp.o unitTests/CMakeFiles/unitTests.dir/testKitchen.cpp.o unitTests/CMakeFiles/unitTests.dir/testStorage.cpp.o unitTests/CMakeFiles/unitTests.dir/testPreparation.cpp.o | lib/libgtest_main.a src/libsrc.a _deps/pugixml-build/libpugixml.a /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib /opt/homebrew/lib/libsfml-audio.2.5.1.dylib /opt/homebrew/lib/libsfml-network.2.5.1.dylib lib/libgtest.a /opt/homebrew/lib/libsfml-window.2.5.1.dylib /opt/homebrew/lib/libsfml-system.2.5.1.dylib || _deps/pugixml-build/libpugixml.a lib/libgtest.a lib/libgtest_main.a src/libsrc.a
   FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
   LINK_LIBRARIES = -Wl,-rpath,/opt/homebrew/lib  lib/libgtest_main.a  src/libsrc.a  _deps/pugixml-build/libpugixml.a  /opt/homebrew/lib/libsfml-graphics.2.5.1.dylib  /opt/homebrew/lib/libsfml-audio.2.5.1.dylib  /opt/homebrew/lib/libsfml-network.2.5.1.dylib  lib/libgtest.a  /opt/homebrew/lib/libsfml-window.2.5.1.dylib  /opt/homebrew/lib/libsfml-system.2.5.1.dylib
   OBJECT_DIR = unitTests/CMakeFiles/unitTests.dir
